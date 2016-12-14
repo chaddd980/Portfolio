@@ -130,3 +130,9 @@ a {
     margin: 0 auto;
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .filler {
+    display: none;
+  }
+}
