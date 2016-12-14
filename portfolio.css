@@ -1,0 +1,116 @@
+.full-div {
+  border: 1rem solid #ffff99;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio {
+  font-size: 1.4rem;
+}
+
+.navigation {
+  background-color: white;
+  border-color: white;
+  margin-top: 40px;
+}
+
+.navbar-header {
+  background-color: white;
+}
+
+.chadd {
+  font-size: 2.4rem;
+}
+
+a {
+  background-color: white !important;
+}
+
+.large_pic {
+  width: 100%;
+  height: 400px;
+  margin: 5px;
+}
+
+.small_pic {
+  width: 100%;
+  height: 263.4px;
+  margin: 5px;
+}
+
+.small_pic_div {
+  margin: 0;
+  padding: 5px;
+}
+
+.large_pic_div {
+  margin: 0;
+  padding: 5px;
+}
+
+.one:hover {
+  border-bottom: 5px solid #ffff99
+}
+
+.chadd-pic {
+  width: 200px;
+  height: 200px;
+}
+
+.vcenter {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.bottom {
+  border-bottom: 5px solid #ffff99;
+  height: 17px;
+}
+
+.symbol {
+  font-style: italic;
+  font-weight: bolder;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.colour {
+  color: #006dcc !important;
+}
+
+.f-nav{
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  left: 0;
+}
+
+.g-nav {
+  padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  div.navbar-header {
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+  .nav {
+    text-align: center;
+  }
+  .chadd, .portfolio {
+    text-align: center;
+  }
+  .me {
+    display: grid;;
+  }
+  .f-nav{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+}
