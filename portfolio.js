@@ -5,6 +5,8 @@ $("document").ready(function($){
         if ($(this).scrollTop() > 100) {
             nav.addClass("f-nav");
             $(".navbar-header").addClass("g-nav")
+            $(".one").addClass("one-scroll")
+            $(".colour").addClass("one-scroll")
         } else {
             nav.removeClass("f-nav");
             $(".navbar-header").removeClass("g-nav")

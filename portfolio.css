@@ -91,6 +91,11 @@ a {
   padding-bottom: 10px;
 }
 
+.one-scroll {
+  margin: 0;
+  padding: 0;
+}
+
 
 @media screen and (max-width: 1024px) {
   div.navbar-header {
@@ -108,9 +113,20 @@ a {
   }
   .f-nav{
     z-index: 9999;
-    position: fixed;
+    position: fixed
     top: 0;
     margin-top: 0;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filler {
+    float: left;
+    height: 30px;
+  }
+  div.me-chadd {
+    display: block;
+    margin: 0 auto;
   }
 }
