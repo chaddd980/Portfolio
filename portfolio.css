@@ -84,6 +84,7 @@ a {
   top: 0;
   margin-top: 0;
   left: 0;
+  right: 0;
 }
 
 .g-nav {
@@ -97,10 +98,6 @@ a {
 
 
 @media screen and (max-width: 1024px) {
-  div.navbar-header {
-    width: 50% !important;
-    margin: 0 auto !important;
-  }
   .nav {
     text-align: center;
   }
@@ -109,13 +106,6 @@ a {
   }
   .me {
     display: grid;;
-  }
-  .f-nav{
-    z-index: 9999;
-    position: fixed
-    top: 0;
-    margin-top: 0;
-    width: 100%;
   }
 }
 
@@ -135,3 +125,18 @@ a {
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .f-nav{
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/*.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+  padding-right: 0px;
+}*/

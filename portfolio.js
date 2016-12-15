@@ -1,9 +1,13 @@
 $("document").ready(function($){
     var nav = $('.navbar');
+    var red = $(".red");
+    var blue = $(".blue");
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             nav.addClass("f-nav");
+            red.addClass("colour-nav");
+            blue.addClass("colour-nav"); 
             $(".navbar-header").addClass("g-nav")
             $(".one").addClass("one-scroll")
             $(".colour").addClass("one-scroll")
