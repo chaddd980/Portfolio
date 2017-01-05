@@ -1,4 +1,10 @@
-$("document").ready(function($){
+$("document").ready(function(){
+    if ($(window).width() <768) {
+      $(".small_pic").addClass("large_pic");
+      $(".small_pic").removeClass("small_pic");
+    // } else if ($(window).width() > 768) {
+    //   $(".symbol").addClass("text-left")
+    // }
     var nav = $('.navbar');
     var red = $(".red");
     var blue = $(".blue");
@@ -7,7 +13,7 @@ $("document").ready(function($){
         if ($(this).scrollTop() > 100) {
             nav.addClass("f-nav");
             red.addClass("colour-nav");
-            blue.addClass("colour-nav"); 
+            blue.addClass("colour-nav");
             $(".navbar-header").addClass("g-nav")
             $(".one").addClass("one-scroll")
             $(".colour").addClass("one-scroll")
