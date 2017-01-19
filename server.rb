@@ -25,6 +25,7 @@ post "/email" do
         :user_name => "chaddd980@gmail.com",
         :password => "bakura15",
         :authentication => :plain,
+        :domain => "heroku.com"
       }
     )
   end
