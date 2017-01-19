@@ -2,6 +2,7 @@ require "sinatra"
 require 'sinatra/base'
 require "sinatra"
 require 'pony'
+require "pry"
 
 set :bind, '0.0.0.0'
 
@@ -12,7 +13,7 @@ end
 
 post "/email" do
   unless params[:name] == "" || params[:email] == "" || params[:message] == ""
-
+binding.pry
     Pony.mail(
       :to => 'chadd980@gmail.com',
       :from => "#{params[:email]}",
@@ -23,8 +24,8 @@ post "/email" do
         :address => 'smtp.gmail.com',
         :port => '587',
         :enable_starttls_auto => true,
-        :user_name => ENV[GMAIL_USERNAME],
-        :password => ENV[GMAIL_PASSWORD],
+        :user_name => "chaddd980@gmail.com",
+        :password => "bakura15",
         :authentication => :plain,
       }
     )
