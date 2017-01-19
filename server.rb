@@ -2,7 +2,6 @@ require "sinatra"
 require 'sinatra/base'
 require "sinatra"
 require 'pony'
-require "pry"
 
 set :bind, '0.0.0.0'
 
@@ -13,7 +12,6 @@ end
 
 post "/email" do
   unless params[:name] == "" || params[:email] == "" || params[:message] == ""
-binding.pry
     Pony.mail(
       :to => 'chadd980@gmail.com',
       :from => "#{params[:email]}",
