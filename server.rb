@@ -18,16 +18,16 @@ post "/email" do
       :from => "#{params[:email]}",
       :subject => "New message through your portfolio from #{params[:email]}",
       :body => "#{params[:name]} says: #{params[:message]}. respond using #{params[:email]}",
-      :via => :smtp,
+      :via => :sendmail,
       :via_options => {
-        :address => 'smtp.gmail.com',
-        :port => '587',
-        :enable_starttls_auto => true,
-        :user_name => "chaddd980@gmail.com",
-        :password => "bakura15",
-        :authentication => :plain,
+        # :address => 'smtp.gmail.com',
+        # :port => '587',
+        # :enable_starttls_auto => true,
+        # :user_name => "chaddd980@gmail.com",
+        # :password => "bakura15",
+        # :authentication => :plain,
         # :location => '/usr/sbin/sendmail'
-        :domain => "heroku.com"
+        # :domain => "heroku.com"
       }
     })
   end
