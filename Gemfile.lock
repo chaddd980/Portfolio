@@ -11,6 +11,9 @@ GEM
     pony (1.11)
       mail (>= 2.0)
     rack (1.6.5)
+    ruby_http_client (3.0.0)
+    sendgrid-ruby (4.0.6)
+      ruby_http_client (~> 3.0.0)
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
@@ -23,6 +26,7 @@ PLATFORMS
 DEPENDENCIES
   figaro
   pony
+  sendgrid-ruby
   sinatra (= 1.1.0)
 
 BUNDLED WITH
