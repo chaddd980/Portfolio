@@ -36,6 +36,11 @@ $("document").ready(function($){
     $(".description").remove("")
   });
 
+  $(".hover").bind('touchstart touchend', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('hover_effect');
+  })
+
 
 
   var nav = $('.navbar');
