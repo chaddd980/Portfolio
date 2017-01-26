@@ -31,10 +31,6 @@ a {
   color: #337AB7;
 }
 
-element:hover, element.hover_effect {
-    rule:properties;
-}
-
 .description {
   font-weight: bold;
   color: #337AB7;
