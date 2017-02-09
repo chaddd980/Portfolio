@@ -25,7 +25,7 @@ $("document").ready(function($){
   });
 
   $("#toe").hover(function() {
-    $(this).append("<div class='text-center description'><p>A tic tac toe web app that is very easy to beat!</p><p>Frameworks Used: React, jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
+    $(this).append("<div class='text-center description'><p>A React  based tic tac toe web app that is very easy to beat!</p><p>Frameworks Used: React, jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
   }, function() {
     $(".description").remove("")
   });
@@ -36,13 +36,21 @@ $("document").ready(function($){
     $(".description").remove("")
   });
 
+  $("#calculator").hover(function() {
+    $(this).append("<div class='text-center description'><p>A simple react based calculator web app</p><p>Frameworks/Preprocessor Used: React, jQuery, Sass and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
+  }, function() {
+    $(".description").remove("")
+  });
+
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $("#twitch").append("<div class='text-center description'><p>A Javascript Web App that uses the twitch JSON API to display the status of twitch accounts and link to them</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
     $("#weather").append("<div class='text-center description'><p>A Javascript Web App that uses the openweathermap API to display the weather in the users current area</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
     $("#quote").append("<div class='text-center description'><p>A Javascript Web App that uses the forismatic API to provide the user with a random quote on request along with the ability to share it on twitter</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
     $("#wiki").append("<div class='text-center description'><p>A Javascript Web App that uses the Wikipedia API to allow users to search up articles based on a word or phrase, or generate a random article</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    $("#toe").append("<div class='text-center description'><p>A tic tac toe web app that is very easy to beat!</p><p>Frameworks Used: React, jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
+    $("#toe").append("<div class='text-center description'><p>A React tic tac toe web app that is very easy to beat!</p><p>Frameworks Used: React, jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
     $("#meetup").append("<div class='text-center description'><p>A sinatra based web app that mimics meetup.com. Users can create and join meetups and comment on these meetups</p><p>Frameworks Used: Sinatra, PostgreSQL, jQuery and Bootstrap</p><p>Languages Used: Ruby, SQL, Javascript, CSS and HTML</p></div>")
+    $("#calculator").append("<div class='text-center description'><p>A basic react based calculator web app</p><p>Frameworks/Preprocessor Used: React, jQuery, Sass and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
+
   }
 
 
