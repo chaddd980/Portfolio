@@ -64,9 +64,6 @@ $("document").ready(function($){
     $("#calculator").append("<div class='text-center description'><p>A basic react based calculator web app</p><p>Frameworks/Preprocessor Used: React, jQuery, Sass and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
     $("#pomo").append("<div class='text-center description'><p>A React timer app that uses the pomodoro time management technique to help users be more efficient</p><p>Frameworks/Preprocessor Used: React, jQuery and Sass</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
     $("#poke").append("<div class='text-center description'><p>A Pokemon spin on the classic Simon game</p><p>Frameworks/Preprocessor Used: React and Sass</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-
-
-
   }
 
 
