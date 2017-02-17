@@ -49,7 +49,7 @@ $("document").ready(function($){
   });
 
   $("#poke").hover(function() {
-    $(this).append("<div class='text-center description'><p>A Pokemon spin on the classic Simon game</p><p>Frameworks/Preprocessor Used: React and Sass</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
+    $(this).append("<div class='text-center description'><p>A Pokemon spin on the classic Simon game Currently optimized for chrome</p><p>Frameworks/Preprocessor Used: React and Sass</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
   }, function() {
     $(".description").remove("")
   });
