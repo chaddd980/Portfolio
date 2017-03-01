@@ -55,8 +55,8 @@ $("document").ready(function($){
   });
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    $("#twitch").append("<div class='text-center appDescription'><p>A Javascript Web App that uses the twitch JSON API to display the status of twitch accounts and link to them</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    $("#weather").append("<div class='text-center appDescription'><p>A Javascript Web App that uses the openweathermap API to display the weather in the users current area</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
+    $("#twitch").append("<div class='text-center appDescription'><p>A Javascript Web App that uses the twitch JSON API to display the status of twitch accounts and link to them</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div></br></br>")
+    $("#weather").append("<div class='text-center appDescription'><p>A Javascript Web App that uses the openweathermap API to display the weather in the users current area</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div></br></br></br>")
     $("#quote").append("<div class='text-center appDescription'><p>A Javascript Web App that uses the forismatic API to provide the user with a random quote on request along with the ability to share it on twitter</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
     $("#wiki").append("<div class='text-center appDescription'><p>A Javascript Web App that uses the Wikipedia API to allow users to search up articles based on a word or phrase, or generate a random article</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
     $("#toe").append("<div class='text-center appDescription'><p>A React tic tac toe web app that is very easy to beat!</p><p>Frameworks Used: React, jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")

@@ -26,6 +26,7 @@ footer {
   align-items: center;
 }
 
+
 .fa {
   color: white;
 }
@@ -83,6 +84,12 @@ a .about-btn {
 }
 
 .image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.me-image {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -198,9 +205,9 @@ a .about-btn {
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
-  position: relative;
 }
 
-.pic:hover {
+
+.image:hover {
   opacity: 0.5;
 }
