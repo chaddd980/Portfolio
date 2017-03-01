@@ -1,5 +1,5 @@
 .full-div {
-  border: 1rem solid #ffff99;
+  /*border: 1rem solid #ffff99;*/
   width: 100%;
   height: 100%;
 }
@@ -9,41 +9,61 @@
 }
 
 .navigation {
-  background-color: white;
-  border-color: white;
-  margin-top: 40px;
+  background-color: #00cca3;
+  border-color: #00cca3;
+  color: white;
 }
 
-.navbar-header {
-  background-color: white;
-  color: #337AB7
+footer {
+  background-color: #00cca3;
+  border-color: #00cca3;
+  color: white;
+  height: 12vw;
+  margin-top: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.fa {
+  color: white;
+}
+
+.teal {
+  background-color: #00cca3;
+  color: white;
+}
+
+.description {
+  display: flex;
+}
+
 .chadd {
   font-size: 2.4rem;
 }
 
-a {
-  background-color: white !important;
+a .about-btn {
+  background-color: #00cca3 !important;
 }
 
 .app-title {
   font-weight: bold;
-  color: #337AB7;
+  border: 0.2vw solid grey;
+  display: inline-block;
+  padding: 3px;;
+  border-radius: 40px;
+  margin-top: 2.5vw;
 }
 
-.description {
-  font-weight: bold;
-  color: #337AB7;
-  border: 1rem solid #ffff99;
-  margin-bottom: 20px;
+.appDescription {
+  border: 0.8vw solid #00cca3;
 }
-
 
 .small_pic {
-  width: 100%;
-  height: 263.4px;
+  width: 28vw;
+  height: 28vw;
   margin: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 2.5vw;
 }
 
 .pic_div {
@@ -55,15 +75,23 @@ a {
   border-bottom: 5px solid #ffff99
 }
 
+.abt-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
 .chadd-pic {
   width: 200px;
   height: 200px;
-}
-
-.vcenter {
-  height: 200px;
   display: flex;
-  align-items: center;
 }
 
 .bottom {
@@ -79,8 +107,12 @@ a {
 }
 
 .colour {
-  color: #006dcc !important;
-  margin: 0px auto;
+  color: white !important;
+  font-weight: 500;
+}
+
+.touch {
+  margin-bottom: 5vw;
 }
 
 .g-nav {
@@ -96,43 +128,64 @@ a {
   margin-top: 0;
 }
 
-
-@media screen and (max-width: 1024px) {
-  .nav {
-    text-align: center;
-  }
-  .chadd, .portfolio {
-    text-align: center;
-  }
-  .me {
-    display: grid;;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .filler {
-    float: left;
-    height: 20px;
-  }
-
-  .my-desc {
-    display: inline-block;
-    bottom: 0;
-  }
-
-
-  .chadd-pic {
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .filler {
-    display: none;
-  }
+.projects {
+  background-color: #f7f7f7;
 }
 
 @media screen and (max-width: 768px) {
+  .small_pic {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .chadd-pic {
+    height: 180px;
+    width: 180px;
+    margin-top: 10px;
+  }
+
+  .abt-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .small_pic {
+    /*margin: 0;*/
+  }
+
+  .small-desc {
+    display: flex;
+  }
+
+  .my-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .chadd {
+    text-align: center;
+  }
+
+  .fill {
+    visibility: hidden;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .f-nav{
     margin-left: 0;
     width: 100%;
@@ -147,11 +200,6 @@ a {
   position: relative;
 }
 
-.large_pic:hover, .small_pic:hover {
+.pic:hover {
   opacity: 0.5;
-}
-
-.paddings {
-  padding-top: 1px !important;
-  padding-bottom: 1px !important;
 }
