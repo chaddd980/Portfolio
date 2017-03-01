@@ -97,18 +97,21 @@ $("document").ready(function($){
   window.addEventListener('resize', function(event){
     if($(window).width() < screenSizeLimit ){
         $( ".fill" ).removeClass("col-xs-4 col-sm-3");
-        $(".chadd").removeClass("col-xs-8 col-sm-9")
+        $(".chadd").removeClass("col-xs-8 col-sm-9");
+        $(".foot").removeClass("fa-4x");
+        $(".foot").addClass("fa-2x");
     } else if ($(window).width() > screenSizeLimit) {
       $( ".fill" ).addClass("col-xs-4 col-sm-3");
-      $(".chadd").addClass("col-xs-8 col-sm-9")
+      $(".chadd").addClass("col-xs-8 col-sm-9");
+      $(".foot").addClass("fa-4x");
     }
   });
 
   if($(window).width() < screenSizeLimit ){
       $( ".fill" ).removeClass("col-xs-4 col-sm-3");
-      $(".chadd").removeClass("col-xs-8 col-sm-9")
-  } else if ($(window).width() > screenSizeLimit) {
-    $( ".fill" ).addClass("col-xs-4 col-sm-3");
-    $(".chadd").addClass("col-xs-8 col-sm-9")
+      $(".chadd").removeClass("col-xs-8 col-sm-9");
+      $(".fa").removeClass("fa-4x");
+      $(".foot").removeClass("fa-4x");
+      $(".foot").addClass("fa-2x");
   }
 });
