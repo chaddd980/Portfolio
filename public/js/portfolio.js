@@ -114,4 +114,10 @@ $("document").ready(function($){
       $(".foot").removeClass("fa-4x");
       $(".foot").addClass("fa-2x");
   }
+
+  if($(window).width() < screenSizeLimit-100 ){
+      $(".fa").removeClass("fa-4x");
+      $(".foot").removeClass("fa-2x");
+      $(".foot").addClass("fa-1x");
+  }
 });
