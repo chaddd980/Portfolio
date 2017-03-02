@@ -72,7 +72,7 @@ a .about-btn {
 }
 
 .me-image {
-  margin-top: -10vw;
+  margin-top: -7vw;
   border: 0.5vw solid #fff;
   border-radius: 50%;
   background-image: url("http://res.cloudinary.com/dk5ge9sgn/image/upload/v1483476661/me_nw69kv.jpg");
@@ -185,6 +185,7 @@ footer {
   .me-image {
     height: $me-pic-resize;
     width: $me-pic-resize;
+    margin-top: -10vw;
   }
 }
 @media screen and (max-width: 600px) {
