@@ -1,8 +1,8 @@
 $back-color: #00cca3;
-$header-size: 2.4rem;
+$header-size: 3.1rem;
 $hover-colour: #ffff99;
-$me-pic-size: 200px;
-$me-pic-resize: 180px;
+$me-pic-size: 20vw;
+$me-pic-resize: 30vw;
 $project-pic-size: 28vw;
 $project-background: #f7f7f7;
 $project-pic-small-size: 60vw;
@@ -61,16 +61,25 @@ a .about-btn {
   border-bottom: 5px solid $hover-colour;
 }
 
-.me-image {
+.me-div {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
-.chadd-pic {
+.me-image {
+  margin-top: -10vw;
+  border: 0.5vw solid #fff;
+  border-radius: 50%;
+  background-image: url("http://res.cloudinary.com/dk5ge9sgn/image/upload/v1483476661/me_nw69kv.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: $me-pic-size;
   height: $me-pic-size;
-  display: flex;
+}
+
+.fill {
+  height: 11px;
 }
 
 // Projects
@@ -168,13 +177,16 @@ footer {
 
 // description media query
 // ----------------------------------------------------------
-
-@media screen and (max-width: 600px) {
-
-  .chadd-pic {
+@media screen and (max-width: 768px) {
+  .me-image {
     height: $me-pic-resize;
     width: $me-pic-resize;
-    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  .me-image {
+    margin-top: 1vw;
   }
 
   .abt-section {
