@@ -73,7 +73,6 @@ $("document").ready(function($){
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             nav.addClass("f-nav navbar-fixed-top");
-            $(".navbar-header").addClass("g-nav")
             $(".one").addClass("one-scroll")
             $(".colour").addClass("one-scroll")
         } else {
