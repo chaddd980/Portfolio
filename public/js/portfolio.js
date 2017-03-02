@@ -75,9 +75,11 @@ $("document").ready(function($){
             nav.addClass("f-nav navbar-fixed-top");
             $(".one").addClass("one-scroll")
             $(".colour").addClass("one-scroll")
+            $(".navigation").removeClass("scroll-nav")
         } else {
             nav.removeClass("f-nav navbar-fixed-top");
             $(".navbar-header").removeClass("g-nav")
+            $(".navigation").addClass("scroll-nav")
         }
     });
 
