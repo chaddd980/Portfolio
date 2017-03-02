@@ -7,7 +7,7 @@ $project-pic-size: 22vw;
 $project-background: #f7f7f7;
 $project-pic-small-size: 50vw;
 $header-footer-colour: white;
-$footer-size: 10vw;
+$footer-size: 6.5vw;
 
 .full-div {
   width: 100%;
@@ -233,5 +233,14 @@ footer {
   .small_pic {
     width: $project-pic-small-size;
     height: $project-pic-small-size;
+  }
+}
+
+// footer media query
+// ----------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: $footer-size + 4;
   }
 }

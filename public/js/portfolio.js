@@ -108,8 +108,11 @@ $("document").ready(function($){
       $(".chadd").addClass("pull-right");
       $(".chadd").removeClass("col-xs-offset-2");
     }
-    if ($(window).width() < screenSizeLimit - 100) {
+    if ($(window).width() < 1028) {
       $(".foot").removeClass("fa-4x");
+      $(".foot").addClass("fa-2x");
+    }
+    if ($(window).width() < 768) {
       $(".foot").removeClass("fa-2x");
       $(".foot").addClass("fa-1x");
     } else if ($(window).width() > screenSizeLimit - 100 && $(window).width() < screenSizeLimit) {
@@ -120,19 +123,20 @@ $("document").ready(function($){
   });
 
 
-  if($(window).width() < screenSizeLimit ){
-      // $( ".fill" ).removeClass("col-xs-4 col-sm-3");
-      // $(".chadd").removeClass("col-xs-8 col-sm-9");
-      $(".fa").removeClass("fa-4x");
+  if($(window).width() < 1028){
+    $(".foot").removeClass("fa-4x");
+    $(".foot").addClass("fa-2x");
+  }
+
+  if($(window).width() < 768 ){
       $(".foot").removeClass("fa-4x");
-      $(".foot").addClass("fa-2x");
+      $(".foot").addClass("fa-1x");
       $(".chadd").removeClass("pull-right");
       $(".chadd").addClass("col-xs-offset-2");
   }
 
   if($(window).width() < screenSizeLimit-100 ){
-      $(".fa").removeClass("fa-4x");
-      $(".foot").removeClass("fa-2x");
-      $(".foot").addClass("fa-1x");
+      $(".fa").removeClass("fa-2x");
+      $(".fa").addClass("fa-1x");
   }
 });
