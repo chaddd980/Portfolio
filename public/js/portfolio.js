@@ -12,33 +12,23 @@ $("document").ready(function($){
     $("#poke").append("<div class='text-center appDescription'><p>A Pokemon spin on the classic Simon game</p><p>Frameworks/Preprocessor Used: React and Sass</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
   } else {
     $("#twitch").hover(function() {
-      $(this).append("<div class='text-center appDescription'><p>A Javascript Web App that uses the twitch JSON API to display the status of twitch accounts and link to them</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    }, function() {
-      $(".appDescription").remove("")
+      $("#twitch-description").stop().slideToggle("slow")
     });
 
     $("#weather").hover(function() {
-      $(this).append("<div class='text-center appDescription'><p>A Javascript Web App that uses the openweathermap API to display the weather in the users current area</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    }, function() {
-      $(".appDescription").remove("")
+      $("#weather-description").stop().slideToggle("slow")
     });
 
     $("#quote").hover(function() {
-      $(this).append("<div class='text-center appDescription'><p>A Javascript Web App that uses the forismatic API to provide the user with a random quote on request along with the ability to share it on twitter</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    }, function() {
-      $(".appDescription").remove("")
+      $("#quote-description").stop().slideToggle("slow")
     });
 
     $("#wiki").hover(function() {
-      $(this).append("<div class='text-center appDescription'><p>A Javascript Web App that uses the Wikipedia API to allow users to search up articles based on a word or phrase, or generate a random article</p><p>Frameworks Used: jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    }, function() {
-      $(".appDescription").remove("")
+      $("#wiki-description").stop().slideToggle("slow")
     });
 
     $("#toe").hover(function() {
-      $(this).append("<div class='text-center appDescription'><p>A React  based tic tac toe web app that is very easy to beat!</p><p>Frameworks Used: React, jQuery and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    }, function() {
-      $(".appDescription").remove("")
+      $("#toe-description").stop().slideToggle("slow")
     });
 
     $("#meetup").hover(function() {
@@ -48,21 +38,15 @@ $("document").ready(function($){
     });
 
     $("#calculator").hover(function() {
-      $(this).append("<div class='text-center appDescription'><p>A simple react based calculator web app</p><p>Frameworks/Preprocessor Used: React, jQuery, Sass and Bootstrap</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    }, function() {
-      $(".appDescription").remove("")
+      $("#calc-description").stop().slideToggle("slow")
     });
 
     $("#pomo").hover(function() {
-      $(this).append("<div class='text-center appDescription'><p>A React timer app that uses the pomodoro time management technique to help users be more efficient</p><p>Frameworks/Preprocessor Used: React, jQuery and Sass</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    }, function() {
-      $(".appDescription").remove("")
+      $("#pomo-description").stop().slideToggle("slow")
     });
 
     $("#poke").hover(function() {
-      $(this).append("<div class='text-center appDescription'><p>A Pokemon spin on the classic Simon game Currently optimized for chrome</p><p>Frameworks/Preprocessor Used: React and Sass</p><p>Languages Used: Javascript, CSS and HTML</p></div>")
-    }, function() {
-      $(".appDescription").remove("")
+      $("#poke-description").stop().slideToggle("slow")
     });
   }
 

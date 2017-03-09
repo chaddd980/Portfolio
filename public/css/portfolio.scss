@@ -94,7 +94,7 @@ a .about-btn {
   border: 0.2vw solid grey;
   display: inline-block;
   padding: 3px;;
-  border-radius: 40px;
+  border-radius: 4px;
   margin-top: 2.5vw;
 }
 
@@ -103,7 +103,7 @@ a .about-btn {
   height: $project-pic-size;
   margin: 5px;
   margin-bottom: 2.5vw;
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .abt-section {
@@ -118,9 +118,15 @@ a .about-btn {
   justify-content: center;
 }
 
-.appDescription {
+@mixin appDescription() {
   border: 0.8vw solid $back-color * 0.9;
+  display: none;
 }
+
+#pomo-description, #twitch-description, #weather-description, #toe-description, #wiki-description, #calc-description, #poke-description, #quote-description {
+  @include appDescription;
+}
+
 
 .projects {
   background-color: $project-background;
