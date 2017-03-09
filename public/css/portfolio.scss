@@ -123,9 +123,17 @@ a .about-btn {
   display: none;
 }
 
-#pomo-description, #twitch-description, #weather-description, #toe-description, #wiki-description, #calc-description, #poke-description, #quote-description {
+.appDescription {
   @include appDescription;
 }
+
+.mobileAppDescription {
+  border: 0.8vw solid $back-color * 0.9;
+}
+
+// #pomo-description, #twitch-description, #weather-description, #toe-description, #wiki-description, #calc-description, #poke-description, #quote-description {
+//   @include appDescription;
+// }
 
 
 .projects {
